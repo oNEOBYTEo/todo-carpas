@@ -1,0 +1,50 @@
+.about {
+  &__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 1em;
+    box-shadow: 0 0 1px 2px black;
+  }
+
+  &__paragraph {
+    line-height: 1.5;
+    font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 758px) {
+    &__title {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &__img {
+      max-width: 400px;
+      border-radius: 1em;
+    }
+    &__container {
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      gap: 2em;
+      position: relative;
+      --padding-container: 3.75em 5em;
+      margin-top: 3em;
+    }
+
+    &__paragraph {
+      text-align: left;
+      font-size: 1.5em;
+    }
+  }
+}

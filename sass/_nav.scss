@@ -1,0 +1,14 @@
+.nav {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 1.5em 0;
+  width: 100%;
+  &__logo {
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: calc(1.5em + 1vw);
+    font-weight: 400;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+  }
+}
